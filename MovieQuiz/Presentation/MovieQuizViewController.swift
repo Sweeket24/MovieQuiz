@@ -5,19 +5,26 @@ final class MovieQuizViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        imageView.layer.masksToBounds = true
+        imageView.layer.cornerRadius = 20
+        imageView.layer.borderWidth = 0
+        
+        let firstQuestion = questions[currentQuestionIndex]
+        let viewModel = convert(model: firstQuestion)
+        show(quiz: viewModel)
     }
     private var correctAnswers = 0
     private var currentQuestionIndex = 0
     
     
-    @IBAction private func yesButtonClicked(_ sender: UIButton) {
+    @IBAction func yesButtonClicked(_ sender: Any) {
         checkAnswer(true)
     }
-    
-    @IBAction private func noButtonClicked(_ sender: UIButton) {
+   
+    @IBAction func noButtonClicked(_ sender: Any) {
         checkAnswer(false)
-        
     }
+    
     
     @IBOutlet private var imageView: UIImageView!
     @IBOutlet private var textLabel: UILabel!
@@ -132,7 +139,7 @@ final class MovieQuizViewController: UIViewController {
         imageView.layer.masksToBounds = true
         imageView.layer.cornerRadius = 20
         imageView.layer.borderWidth = 8
-        imageView.layer.borderColor = isCorrect ? UIColor.systemGreen.cgColor : UIColor.systemRed.cgColor
+        imageView.layer.borderColor = isCorrect ? UIColor.ypGreen.cgColor : UIColor.ypRed.cgColor
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
             self.showNextQuestionOrResults()

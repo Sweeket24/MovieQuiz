@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24412" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_9" orientation="portrait" appearance="dark"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24405"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
@@ -27,62 +27,57 @@
                                 <rect key="frame" x="20" y="134" width="400" height="754"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PGp-WG-Y6g">
-                                        <rect key="frame" x="0.0" y="0.0" width="400" height="23.666666666666668"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="400" height="23.333333333333332"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VLJ-Dk-64x" userLabel="Question Title Label">
-                                                <rect key="frame" x="0.0" y="0.0" width="359.66666666666669" height="23.666666666666668"/>
-                                                <color key="tintColor" name="YP Black (iOS)"/>
-                                                <attributedString key="attributedText">
-                                                    <fragment content="Вопрос:">
-                                                        <attributes>
-                                                            <color key="NSColor" name="YP White (iOS)"/>
-                                                            <font key="NSFont" size="20" name="YSDisplay-Medium"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                </attributedString>
-                                                <color key="highlightedColor" name="YP Black (iOS)"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вопрос:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VLJ-Dk-64x" userLabel="Question Title Label">
+                                                <rect key="frame" x="0.0" y="0.0" width="359.66666666666669" height="23.333333333333332"/>
+                                                <fontDescription key="fontDescription" name="YSDisplay-Medium" family="YS Display" pointSize="20"/>
+                                                <color key="textColor" name="ypWhite"/>
+                                                <color key="highlightedColor" name="ypBlack"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6hm-TO-MIZ" userLabel="Index label">
-                                                <rect key="frame" x="359.66666666666669" y="0.0" width="40.333333333333314" height="23.666666666666668"/>
-                                                <color key="backgroundColor" name="YP Background (iOS)"/>
-                                                <attributedString key="attributedText">
-                                                    <fragment content="0/10">
-                                                        <attributes>
-                                                            <color key="NSColor" name="YP White (iOS)"/>
-                                                            <font key="NSFont" size="20" name="YSDisplay-Medium"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                </attributedString>
-                                                <color key="highlightedColor" name="YP White (iOS)"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="0/10" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6hm-TO-MIZ" userLabel="Index label">
+                                                <rect key="frame" x="359.66666666666669" y="0.0" width="40.333333333333314" height="23.333333333333332"/>
+                                                <color key="backgroundColor" name="YPBackground"/>
+                                                <fontDescription key="fontDescription" name="YSDisplay-Medium" family="YS Display" pointSize="20"/>
+                                                <color key="textColor" name="ypWhite"/>
+                                                <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eMh-fD-2OB" userLabel="Preview Image">
-                                        <rect key="frame" x="0.0" y="31.666666666666629" width="400" height="600"/>
-                                        <color key="backgroundColor" name="YP White (iOS)"/>
+                                        <rect key="frame" x="0.0" y="31.333333333333371" width="400" height="600"/>
+                                        <color key="backgroundColor" name="ypWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="eMh-fD-2OB" secondAttribute="height" multiplier="2:3" id="ePO-l4-oeo"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Рейтинг этого фильма меньше, чем 5?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fax-s6-xg8" userLabel="Question Label">
-                                        <rect key="frame" x="0.0" y="639.66666666666663" width="400" height="46.333333333333371"/>
-                                        <color key="backgroundColor" name="YP Background (iOS)"/>
-                                        <fontDescription key="fontDescription" name="YSDisplay-Bold" family="YS Display" pointSize="23"/>
-                                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                        <color key="highlightedColor" name="YP White (iOS)"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fax-s6-xg8" userLabel="Question Label">
+                                        <rect key="frame" x="0.0" y="639.33333333333337" width="400" height="46.666666666666629"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Рейтинг этого фильма меньше, чем 5?">
+                                                <attributes>
+                                                    <color key="NSColor" name="ypWhite"/>
+                                                    <font key="NSFont" size="23" name="YSDisplay-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <color key="highlightedColor" name="ypWhite"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="zsY-7R-ufh">
                                         <rect key="frame" x="0.0" y="694" width="400" height="60"/>
                                         <subviews>
-                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L9G-aa-nxL" userLabel="No button">
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0QD-F0-ZCJ">
                                                 <rect key="frame" x="0.0" y="0.0" width="190" height="60"/>
-                                                <color key="backgroundColor" name="YP White (iOS)"/>
-                                                <fontDescription key="fontDescription" name="YSDisplay-Medium" family="YS Display" pointSize="20"/>
-                                                <color key="tintColor" name="YP Black (iOS)"/>
-                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" title=" Нет">
-                                                    <color key="titleColor" name="YP Black (iOS)"/>
-                                                </state>
+                                                <color key="backgroundColor" name="ypWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="ogg-pg-IR1"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Нет">
+                                                    <fontDescription key="titleFontDescription" name="YSDisplay-Medium" family="YS Display" pointSize="20"/>
+                                                    <color key="baseForegroundColor" name="ypBlack"/>
+                                                </buttonConfiguration>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius ">
                                                         <integer key="value" value="15"/>
@@ -90,27 +85,17 @@
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="noButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I8k-Hc-aBz"/>
+                                                    <action selector="noButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Q4-Gt-APA"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f6Z-R5-ZR8" userLabel="Yes button">
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kYM-Ez-qkf">
                                                 <rect key="frame" x="210" y="0.0" width="190" height="60"/>
-                                                <color key="backgroundColor" name="YP White (iOS)"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="60" id="NEm-rp-iSS"/>
-                                                </constraints>
-                                                <color key="tintColor" name="YP Black (iOS)"/>
-                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal">
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="Да">
-                                                            <attributes>
-                                                                <color key="NSColor" name="YP Black (iOS)"/>
-                                                                <font key="NSFont" size="20" name="YSDisplay-Medium"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
-                                                </state>
+                                                <color key="backgroundColor" name="ypWhite"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Да">
+                                                    <fontDescription key="titleFontDescription" name="YSDisplay-Medium" family="YS Display" pointSize="20"/>
+                                                    <color key="baseForegroundColor" name="ypBlack"/>
+                                                </buttonConfiguration>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius ">
                                                         <integer key="value" value="15"/>
@@ -118,20 +103,20 @@
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="yesButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bgc-Vt-qNn"/>
+                                                    <action selector="yesButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z8J-s9-BpQ"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="L9G-aa-nxL" firstAttribute="width" secondItem="f6Z-R5-ZR8" secondAttribute="width" id="cwF-qi-gZE"/>
-                                            <constraint firstItem="L9G-aa-nxL" firstAttribute="height" secondItem="f6Z-R5-ZR8" secondAttribute="height" id="ydW-ci-9e0"/>
+                                            <constraint firstItem="kYM-Ez-qkf" firstAttribute="width" secondItem="0QD-F0-ZCJ" secondAttribute="width" id="P2e-gf-VXW"/>
+                                            <constraint firstItem="kYM-Ez-qkf" firstAttribute="height" secondItem="0QD-F0-ZCJ" secondAttribute="height" id="joh-54-4b5"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="IVV-EN-UEd"/>
-                        <color key="backgroundColor" name="YP Black (iOS)"/>
+                        <color key="backgroundColor" name="YPBackground"/>
                         <constraints>
                             <constraint firstItem="IVV-EN-UEd" firstAttribute="trailing" secondItem="p9J-rB-MMu" secondAttribute="trailing" constant="20" id="7os-Al-m3u"/>
                             <constraint firstItem="p9J-rB-MMu" firstAttribute="leading" secondItem="IVV-EN-UEd" secondAttribute="leading" constant="20" id="H1F-MS-A8e"/>
@@ -151,13 +136,13 @@
         </scene>
     </scenes>
     <resources>
-        <namedColor name="YP Background (iOS)">
+        <namedColor name="YPBackground">
             <color red="0.10196078431372549" green="0.10588235294117647" blue="0.13333333333333333" alpha="0.60000002384185791" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="YP Black (iOS)">
+        <namedColor name="ypBlack">
             <color red="0.10196078431372549" green="0.10588235294117647" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="YP White (iOS)">
+        <namedColor name="ypWhite">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
