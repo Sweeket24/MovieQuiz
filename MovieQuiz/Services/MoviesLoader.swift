@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 struct ServerError: Error {
     let messageError: String
     var localizedDescription: String {
@@ -20,9 +19,8 @@ protocol MoviesLoading {
 }
 
 struct MoviesLoader: MoviesLoading {
-    
     private let networkClient: NetworkRouting
-
+    
     init(networkClient: NetworkRouting = NetworkClient()) {
         self.networkClient = networkClient
     }
@@ -35,18 +33,12 @@ struct MoviesLoader: MoviesLoading {
     }
     
     func loadMovies(handler: @escaping (Result<MostPopularMovies, Error>) -> Void) {
-        
         networkClient.fetch(url: mostPopularMoviesUrl) { result in
             switch result {
             case .success(let data):
                 do {
                     let mostPopularMovies = try JSONDecoder().decode(MostPopularMovies.self, from: data)
-                    if mostPopularMovies.errorMessage.isEmpty {
-                        handler(.success(mostPopularMovies))
-                    } else {
-                        let error = ServerError(messageError: mostPopularMovies.errorMessage)
-                        handler(.failure(error))
-                    }
+                    handler(.success(mostPopularMovies))
                 } catch {
                     handler(.failure(error))
                 }
