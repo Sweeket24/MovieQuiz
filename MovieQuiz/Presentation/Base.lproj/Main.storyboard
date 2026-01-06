@@ -67,7 +67,7 @@
                                         <attributedString key="attributedText">
                                             <fragment content="Рейтинг этого фильма меньше, чем 5?">
                                                 <attributes>
-                                                    <color key="NSColor" name="ypWhite"/>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                     <font key="NSFont" size="23" name="YSDisplay-Bold"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
