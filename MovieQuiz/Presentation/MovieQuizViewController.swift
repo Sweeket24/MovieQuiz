@@ -11,6 +11,7 @@ final class MovieQuizViewController: UIViewController, MovieQuizViewControllerPr
         imageView.layer.cornerRadius = 20
     }
     
+    
     @IBAction func yesButtonClicked(_ sender: Any) {
         presenter.yesButtonClicked()
     }
